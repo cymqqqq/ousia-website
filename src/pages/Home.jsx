@@ -1,5 +1,4 @@
 import React from "react";
-import AliceCarousel from "react-alice-carousel";
 import SimpleImageSlider from "react-simple-image-slider";
 
 export default function Home() {
