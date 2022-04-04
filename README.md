@@ -1,9 +1,9 @@
-# ![ReExoBits Logo](http://greenzeta.com/wp-content/uploads/2021/11/article_icon.png) nft-minting-website-example
-## ReExoBits
+#  ousia-minting-website-example
+## Ousia
 
-A complete NFT website with Minting and Gallery features. Based off of the ExoBits website: [ExoBitsNFT.com](https://exobitsnft.com/). This project accompanies the medium article ["How To Build An NFT Website"](#article)
+A complete NFT website with Minting and Gallery features. 
 
-![ReExoBits ScreenShot](http://greenzeta.com/wp-content/uploads/2021/11/reexobits_preview.png)
+
 
 ## Table of contents
 - [The Article](#article)
