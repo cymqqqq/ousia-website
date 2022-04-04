@@ -21,8 +21,8 @@ This project accompanies ["How To Build An NFT Website"](https://medium.com/@gr
 Clone this repo and enter the project directory:
 
 ```sh
-$ git clone https://github.com/mwilber/nft-minting-website-example
-$ cd nft-minting-website-example
+$ git clone https://github.com/mwilber/ousia-website
+$ cd ousia-website
 ```
 Install dependencies:
 ```sh
