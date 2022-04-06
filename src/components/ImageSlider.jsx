@@ -1,16 +1,22 @@
-import React, { useState } from "react";
-import AliceCarousel from "react-alice-carousel";
-const ImageSlider = () => {
-    
+import React from "react";
+import SimpleImageSlider from "react-simple-image-slider";
 
-    return (
-        <AliceCarousel>
-            <img src="ousia1.jpeg" className="sliderimage" alt="ousia1" width="70%" />
-            <img src="ousia2.jpeg" className="sliderimage" alt="ousia2" width="70%" />
-            <img src="ousia3.jpeg" className="sliderimage" alt="ousia3" width="70%" />
-        </AliceCarousel>
-        
-    )
+export default function ImageSlider() {
+	const images = [
+		{ url: "ousia1.jpeg" },
+		{ url: "ousia2.jpeg" },
+		{ url: "ousia3.jpeg" },
+	  ];
+	return (
+		<div className="page home">
+			
+			<SimpleImageSlider
+				width={1200}
+				height={504}
+				images={images}
+				showBullets={true}
+				showNavs={true}
+			/>
+		</div>
+	);
 }
-
-export default ImageSlider;

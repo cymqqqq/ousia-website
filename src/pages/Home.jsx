@@ -1,24 +1,30 @@
 import React from "react";
-import SimpleImageSlider from "react-simple-image-slider";
-
+import { Link } from "react-router-dom";
 export default function Home() {
-	const images = [
-		{ url: "ousia1.jpeg" },
-		{ url: "ousia2.jpeg" },
-		{ url: "ousia3.jpeg" },
-	  ];
+	
 	return (
-		<div className="page home">
-			<h1>Gently Used NFTs Looking For A new Home</h1>
-			<p>Click the "Connect Wallet" Button above to access the minting page.</p>
-			<SimpleImageSlider
-				width={1200}
-				height={504}
-				images={images}
-				showBullets={true}
-				showNavs={true}
-				
-			/>
+		<div className="div-left"
+			>
+			<ul>
+				<li>
+					<Link to="/team">
+						<img src="ousia1.jpeg"  width={500} height={250} align="absmiddle" alt="" />
+					</Link>
+					<p> Background</p>
+				</li>
+				<li>
+					<Link to="/about">
+						<img src="ousia2.jpeg" width={500} height={250} align="absmiddle" alt="" />
+					</Link>
+					<p align="center"> Team Introduction</p>
+				</li>
+				<li>
+					<Link to="/team">
+						<img src="ousia3.jpeg" width={500}  height={250} align="absmiddle" alt="" />
+					</Link>
+				</li>
+
+			</ul>
 		</div>
 	);
 }
