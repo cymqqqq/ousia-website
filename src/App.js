@@ -37,7 +37,7 @@ function App() {
 			<Router>
 				<header>
 					<Link to="/">
-					
+							<img className="logo-left" src="logo.png"  width={150} height={50} alt="" />
 					</Link>
 					<nav>
 						
@@ -58,18 +58,14 @@ function App() {
 								</li>
 						</ul>
 						<ul>
+						
 							<li>
 								<Link to="/team">Team Intro</Link>
 							</li>
 							<li>
 								<Link to="/about">About</Link>
 							</li>
-							<li>
-								<Link to="/team">Kind</Link>
-							</li>
-							<li>
-								<Link to="/team">Login/Sign up</Link>
-							</li>
+	
 
 						</ul>
 					</nav>
