@@ -20,7 +20,7 @@ contract ReExoBits is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 	function CustomMint(string memory _uri) public payable returns (uint256) {
 		
 		// Check for a token that already exists
-		require(_uriId[_uri] == 0, "This key is already minted");
+		require(_uriId[_uri] > 2, "This key is already minted twice");
 		
 		_tokenIds.increment();
 		uint256 newItemId = _tokenIds.current();

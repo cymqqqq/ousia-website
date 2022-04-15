@@ -60,10 +60,16 @@ function App() {
 						<ul>
 						
 							<li>
-								<Link to="/team">Team Intro</Link>
+								<Link to="/about-us">About us</Link>
 							</li>
 							<li>
-								<Link to="/about">About</Link>
+								<Link to="/about">Community</Link>
+							</li>
+							<li>
+								<Link to="/team">Cyber security</Link>
+							</li>
+							<li>
+								<Link to="/about">Roadmap</Link>
 							</li>
 	
 
