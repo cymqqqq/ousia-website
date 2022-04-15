@@ -5,15 +5,16 @@ import {
 	Route,
 	Link
 } from 'react-router-dom';
-
+import { Redirect } from 'react-router';
 import './App.css';
 
 import Home from './pages/Home';
 import Mint from './pages/Mint';
 import Gallery from './pages/Gallery';
 import MyTokens from './pages/MyTokens';
-
+import About from "./pages/About";
 import Login from './components/Login';
+import Community from "./pages/Community";
 
 function App() {
 
@@ -58,18 +59,20 @@ function App() {
 								</li>
 						</ul>
 						<ul>
-						
+							
+							
 							<li>
-								<Link to="/about-us">About us</Link>
+								<Link to="/about">About us</Link>
+								
 							</li>
 							<li>
-								<Link to="/about">Community</Link>
+								<Link to="/community">Community</Link>
 							</li>
 							<li>
 								<Link to="/team">Cyber security</Link>
 							</li>
 							<li>
-								<Link to="/about">Roadmap</Link>
+								<Link to="/roadmap">Roadmap</Link>
 							</li>
 	
 
@@ -78,7 +81,7 @@ function App() {
 				</header>
 				<div className="content">
 					<Switch>
-					<Route path="/mytokens">
+						<Route path="/mytokens">
 							<MyTokens contract={web3props.contract} address={walletAddress}></MyTokens>
 						</Route>
 						<Route path="/gallery">
@@ -87,9 +90,16 @@ function App() {
 						<Route path="/mint">
 							<Mint contract={web3props.contract} address={walletAddress}></Mint>
 						</Route>
-						<Route path="/">
-							<Home />
+						<Route path="/about">
+							<About />
 						</Route>
+						<Route path="/community">
+							<Community />
+						</Route>
+						<Route path="/">
+							<Home/>
+						</Route>
+						
 					</Switch>
 				</div>
 			</Router>
