@@ -14,6 +14,7 @@ import MyTokens from './pages/MyTokens';
 import About from "./pages/About";
 import Login from './components/Login';
 import Community from "./pages/Community";
+import NewBar from "./pages/NewBar";
 
 function App() {
 
@@ -40,8 +41,16 @@ function App() {
 							<img className="logo-left" src="logo.png"  width={150} height={50} alt="" />
 					</Link>
 					<nav>
+						<ul>
+							<li>
+							<NewBar />
+							</li>
+							
+						</ul>
 						
 						<ul>
+						
+							
 								{contractAvailable && <>
 									<li>
 										<Link to="/mint">Mint</Link>
@@ -53,10 +62,14 @@ function App() {
 										<Link to="/mytokens">My Exobits</Link>
 									</li>
 								</>}
+								
 								<li>
 									<Login callback={OnLogin} connected={contractAvailable} address={walletAddress}></Login>
+									
 								</li>
+								
 						</ul>
+						
 						<ul>
 							
 							
@@ -76,6 +89,7 @@ function App() {
 	
 
 						</ul>
+						
 					</nav>
 				</header>
 				<div className="content">

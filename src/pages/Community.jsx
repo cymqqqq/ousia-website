@@ -5,11 +5,8 @@ export default function Community() {
 		<div className="Community">
 			<div>
 				<div className="div-right">
-					<ul>
-						<li>
-							<img src="community.jpeg"  width={500} height={800}  alt="" />
-						</li>
-					</ul>
+					<img src="community.jpeg"  width={500} height={800}  alt="" />
+
 				</div>
 
 				<div>

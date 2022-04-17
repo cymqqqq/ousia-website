@@ -6,11 +6,8 @@ export default function About() {
 		<div className="About">
 			<div>
 				<div className="div-right">
-					<ul>
-						<li>
-							<img src="about-us.jpeg"  width={500} height={300}  alt="" />
-						</li>
-					</ul>
+					<img src="about-us.jpeg"  width={450} height={300}  alt="" />
+
 				</div>
 
 				<div>
