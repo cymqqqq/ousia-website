@@ -38,11 +38,12 @@ a{
 .Home {
 	position: absolute;
 	width: 100%;
-	height: 330%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	background: url("home-background.jpeg") center center / cover no-repeat;
+	
 }
 header{
 	position: fixed;
@@ -80,9 +81,8 @@ a.button{
 		HEADER
 */
 header{
-	background-color: var(--bkgColorHead);
+	
 	color: var(--txtColorHead);
-	box-shadow: inset 1px 3px 25px 0px rgba(10, 18, 45, 0.5), 1px 1px 25px 0px #000;
 	z-index: 100;
 }
 
@@ -132,6 +132,14 @@ button.login{
 	float:right;
 	vertical-align: middle;
 }
+
+.div-cyber{
+	width: 50%;
+	height:300px;
+	
+	float:right;
+	vertical-align: middle;
+}
 .div-left{
 	float:left;
 	
@@ -139,6 +147,7 @@ button.login{
 
 .logo-left {
 	float: left;
+	height: 50px;
 }
 .about-us-h1 {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -249,4 +258,52 @@ button.login{
 .div-newbar {
 	height: auto;
 	margin: 0% 10px;
+	
+}
+
+.div-roadmap-pic {
+	float: left;
+	background-size: auto;
+}
+
+
+.div-roadmap-content {
+	float: right;
+	width: 50%;
+	height: 800;
+	overflow-y: auto;
+	text-align: left;
+}
+.roadmap-p {
+	font-style: oblique;
+}
+
+.div-roadmap-content-dist {
+	margin: 10px 0px;
+}
+
+.roadmap-h {
+	color: white;	
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-shadow: 0px 0px 15px #00FFFF,0px 0px 15px #00FFFF,0px 0px 15px #00FFFF;
+}
+
+.roadmap-h3 {
+	font-style: italic;
+	color: #FF013C;
+}
+
+.roadmap-span1 {
+	font-style: italic;
+	color: #FF013C;
+}
+.roadmap-span2 {
+	font-style: italic;
+	color: aquamarine;
+}
+
+.div-cyber-content {
+	float: left;
+	width: 50%;
 }

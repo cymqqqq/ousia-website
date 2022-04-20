@@ -15,6 +15,8 @@ import About from "./pages/About";
 import Login from './components/Login';
 import Community from "./pages/Community";
 import NewBar from "./pages/NewBar";
+import Cyber from "./pages/Cyber";
+import Roadmap from "./pages/Roadmap";
 
 function App() {
 
@@ -38,7 +40,7 @@ function App() {
 			<Router>
 				<header>
 					<Link to="/">
-							<img className="logo-left" src="logo.png"  width={150} height={50} alt="" />
+							<img className="logo-left" src="logo.png"  width={150} height={100} alt="" />
 					</Link>
 					<nav>
 						<ul>
@@ -59,7 +61,7 @@ function App() {
 										<Link to="/gallery">Gallery</Link>
 									</li>
 									<li>
-										<Link to="/mytokens">My Exobits</Link>
+										<Link to="/mytokens">My Ousia</Link>
 									</li>
 								</>}
 								
@@ -74,14 +76,14 @@ function App() {
 							
 							
 							<li>
-								<Link to="/about">About us</Link>
+								<Link to="/about">About Us</Link>
 								
 							</li>
 							<li>
 								<Link to="/community">Community</Link>
 							</li>
 							<li>
-								<Link to="/team">Cyber security</Link>
+								<Link to="/cyber">Cyber Security</Link>
 							</li>
 							<li>
 								<Link to="/roadmap">Roadmap</Link>
@@ -109,6 +111,14 @@ function App() {
 						<Route path="/community">
 							<Community />
 						</Route>
+						<Route path="/cyber">
+							<Cyber />
+						</Route>
+						<Route path="/roadmap">
+							<Roadmap />
+						</Route>
+
+
 						<Route path="/">
 							<Home/>
 						</Route>
